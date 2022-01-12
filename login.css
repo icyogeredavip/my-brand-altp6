@@ -1,0 +1,162 @@
+.login-content{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.form-log-content{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    width: 30%;
+}
+.form-log-content form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vh;
+    width: 100%;
+}
+.form-log-content form input{
+    padding: 15px 20px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    color: #5f68eb;
+    border: none;
+    outline: 1px solid #5f68eb;
+}
+#log-but{
+    padding: 10px 0;
+    color: white;
+    background-color: #5f68eb;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    width: 45%;
+    border: 2px solid #5f68eb;
+    border-radius: 50px;
+    margin: 0 auto 2vh auto;
+}
+#log-but:hover{
+    color: #5f68eb;
+    font-weight: 600;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+.log-top, .log-bot{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    margin-bottom: 2vh;
+}
+.log-top li, .log-bot li{
+    list-style: none;
+}
+.log-top li a{
+    text-decoration: none;
+    color: #000;   
+}
+.log-top li a:hover{
+    color: #464CAC;
+    transition: color .3s ease; 
+}
+.log-bot li a{
+    text-decoration: #fff;
+    color: #464CAC;
+}
+.log-bot li a:hover{
+    color: #000;
+    transition: color .3s ease;
+}
+.login-head{
+    font-size: 30px;
+    font-weight: 400;
+    color: #5f68eb;
+    margin-bottom: 20px;
+}
+.log-line{
+    width: 10%;
+    margin: 0 auto 5vh auto;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #464CAC;
+}
+.check-box{
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 2.5px solid #464CAC;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+input[type="checkbox"], .check-box label{
+    cursor: pointer;
+}
+.check-box label:hover{
+    color: #5f68eb;
+    transition: color .3s ease;
+}
+
+input[type="checkbox"]:after{
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 13.5px;
+    color: #464CAC;
+    display: none;  
+}
+input[type="checkbox"]:hover{
+    transition: .4s;
+    border: 2.5px solid #5f68eb;
+}
+input[type="checkbox"]:checked:after{
+    display: block;
+}
+
+/* Mobile Designs */
+@media (max-width:915px) {
+    .log-line{
+        width: 20%;
+    }
+    .form-log-content{
+        margin-bottom: 15px;
+        width: 100%;
+    } 
+    #log-but{
+        padding: 10px 0;
+        width: 65%;
+        margin: 0 auto;
+    }
+    .log-top, .log-bot{
+        width: 100%;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .log-top li a, .check-box label{
+        font-size: 12px;
+    }
+    .log-bot li a{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+}
+@media (maxwidth:320px) {
+    .login-content{
+        width: 90%;
+    }
+}

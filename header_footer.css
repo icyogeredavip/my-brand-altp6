@@ -1,0 +1,287 @@
+/* Desktop Designs */
+/* Header */
+.header{
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 10px;    
+}
+.nav-desktop{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-d-logo a{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #464CAC;
+}
+.nav-d-logo a:hover{
+    transition: text-shadow .3s ease;
+    text-shadow: .5px 2px 4px;
+}
+.nav-d-links{
+    display: flex;
+}
+.nav-d-links span a{
+    text-align: center;
+    text-decoration: none;
+    color: #676765;
+    margin-right: 50px;
+}
+.nav-d-links span a:hover{
+    transition: all .3s ease;
+    color: #464CAC;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #464CAC;
+}
+#link-active{
+    color: #464CAC;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #464CAC;
+}
+#link-active:hover{
+    color: #676765;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #676765;
+    transition: all .6s ease;
+}
+/* Footer */
+/* Footer Left */
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 100px;
+    background-color: #b6d8ff;
+}
+.f-f-left{
+    width: fit-content;
+}
+.f-f-left h3{
+    font-size: 45px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.f-f-left p{
+    font-size: 18px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.f-f-left a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #464CAC;
+    border-radius: 3px;
+    background-color: #464CAC;
+    font-size: 16px;
+    font-weight: 400;
+}
+.f-f-left a:hover{
+    color: #464CAC;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+/* Footer Right */
+.f-f-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.foot-top{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.foot-top span a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 300;
+}
+.foot-top span a:hover{
+    color: #464CAC;
+    font-weight: 400;
+    transition: color .3s ease;
+}
+.foot-bottom{
+    width: 50%;
+    margin: 0 auto;
+}
+.foot-bottom span{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Mobile Designs */
+/* Header Title */
+.header-title-logo a{
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+ .nav{
+    display: none;
+}
+ .mainMenu {
+    display: flex;
+    align-items: flex-start !important;
+    list-style: none;
+}
+.mainMenu li{
+    margin-left: 30px;
+}
+ .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 20px;
+}
+ .openMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.mainMenu .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-bars{
+    color: #000;
+    outline: none;
+}
+.fa-times{
+    color: #000;
+    z-index: 2;
+    outline: none;
+}
+
+/* Mobile Designs */
+@media (max-width:915px) {
+    .header{
+        padding: 30px 30px;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .left-side, .right-side{
+        display: none;
+    }
+    /* Hamburger Menu */
+     .mainMenu {
+        height: 100vh;
+        width: 60%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 1;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right .5s ease;
+        background: radial-gradient(circle,#FEC10E,#a37a00);
+        border-top-left-radius: 10rem;
+        border-bottom-left-radius: 10rem;
+        display: none;
+    }
+    .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .openMenu {
+        display: block;
+    }
+    .head-line{
+        width: 50%;
+        height: 2px;
+        background-color: #fff;
+    }
+    .hover-line{
+        width: 50%;
+        height: 2px;
+        background-color: #000;
+    }
+    #home-link-active{
+        color: #fff;
+        font-weight: 400 !important;
+        padding-bottom: 2px;
+    }
+    #home-link-active:hover{
+        color: #000;
+        transition: all .3s ease-in;
+        font-weight: 400 !important;
+    }
+    /* Footer */
+    .top-foot{
+        width: 90%;
+        padding: 50px 0 20px 0;
+    }
+    .top-foot p{
+        font-size: 25px;
+        text-align: center;
+    }
+    .top-foot h3{
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: capitalize;
+        margin: 0 auto 30px auto;
+    }
+    .sub-foot{
+        width: 90%;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: none;
+    }
+    .sub-foot a{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    .bottom-foot{
+        flex-direction: column;
+        width: 85%;
+    }
+    .foot-left, .foot-right{
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .foot-left a, .foot-right a{
+        color: #000;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 300;
+        
+    }
+    .foot-left li{
+        margin-right: 2vw;
+    }
+}
+/* Mobile design for smaller screens */
+@media (max-width:320px) {
+    .foot-left a, .foot-right a{
+        font-size: 13px;
+    }
+}
+
+

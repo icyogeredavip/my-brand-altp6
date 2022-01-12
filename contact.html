@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-    <title>Login</title>
+    <title>Contact Me</title>
 </head>
 <body>
     <header class="header">
@@ -19,8 +18,8 @@
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="hire_me.html">HIRE ME</a></li>
                 <li><a href="about.html">ABOUT ME</a></li>
-                <li><a href="contact.html">CONTACT ME</a></li>
-                <li><a href="login.html" id="home-link-active">LOGIN</a></li>
+                <li><a href="contact.html" id="home-link-active">CONTACT ME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
             <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </div>
@@ -33,36 +32,37 @@
                 <span><a href="blog.html">Blog</a></span>
                 <span><a href="hire_me.html">Hire Me</a></span>
                 <span><a href="about.html">About Me</a></span>
-                <span><a href="contact.html">Contact Me</a></span>
-                <span><a href="login.html" id="link-active">Login</a></span>
+                <span><a href="contact.html" id="link-active">Contact Me</a></span>
+                <span><a href="login.html">Login</a></span>
             </div>
         </div>
     </header>
-    <main class="login-content">
-            <div>
-                <h1 class="login-head">Login</h1>
+    <main class="contact-container">
+        <div class="contact-head">
+            <h1>Let's Talk</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        </div>
+        <div class="contact-main-content">
+            <div class="contact-left">
+                <div class="cl-bottom">
+                    <p>Kigarama, Kicukiro, Kigali-Rwanda</p>
+                    <p><a href="tel:+250785265860">+(250) 785 265 860</a></p>
+                    <p><a href="mailto:mucyoalexaxel@gmail.com">mucyoalexaxel@gmail.com</a></p>
+                </div>
             </div>
-            <div class="log-line"></div>
-        </div>
-        <div class="form-log-content">
-            <form action="GET">
-                <input type="text" name="username" id="user-id" placeholder="Username">
-                <input type="password" name="psd" id="psd-id" placeholder="Password">
-                <input type="submit" value="GET STARTED" id="log-but">
-           </form>
-        </div>
-        <div class="log-top">
-            <li class="check-box"><input type="checkbox" name="keep-me-log" id="keep-me-log-id"><label for="keep-me-log-id">Keep Me Logged In</label></li>
-            <li><a href="#">Forgot Password?</a></li>
-        </div>
-        <div class="log-bot">
-             <li>
-                 <a href="#">CREATE ACCOUNT</a>
-                 
-             </li>
-             <li>
-                 <a href="#">NEED HELP</a>
-             </li>
+            <div class="contact-right">
+                    <form action="get" method="get">
+                        <label for="name-id">Full Names:</label>
+                        <input type="text" name="name-box" id="name-id" placeholder="Name">
+                        <label for="email-id">Email:</label>
+                        <input type="email" name="email-box" id="email-id" placeholder="Email">
+                    </form>
+                    <form action="get" method="get">
+                        <label for="msgBox">Your Message:</label>
+                        <textarea id="msgBox" name="msgBox" rows="5" cols="33" placeholder="Message"></textarea>
+                        <input type="button" value="contact me">
+                    </form>
+            </div>
         </div>
     </main>
     <footer class="footer">

@@ -1,1 +1,2 @@
-# my-brand-altp6
+# ALTP-6-Capstone-Project
+

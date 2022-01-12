@@ -1,0 +1,25 @@
+
+.abt-icon{
+    margin-right: 1vw;
+}
+.fa-twitter, .fa-instagram, .fa-linkedin, .fa-github, .fa-figma{
+    font-size: 35px;
+    cursor: pointer;
+}
+.fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-github:hover, .fa-figma:hover{
+    transform: translateY(-5px);
+    transition: all .3s ease;
+}
+.fa-twitter:hover{color: #1da1f2;}
+.fa-instagram:hover{color: #f10c3e;} 
+.fa-linkedin:hover{color: #1889cf;}
+.fa-github:hover{color: #0e76a8;}
+.fa-figma:hover{color: #f10c3e;}
+
+@media (max-width:915px) {
+    .space-icons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+}
