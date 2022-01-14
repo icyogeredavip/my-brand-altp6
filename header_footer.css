@@ -18,11 +18,12 @@
     letter-spacing: 2px;
     text-transform: capitalize;
     text-decoration: none;
-    color: #464CAC;
+    color: #5f68eb;
+
 }
 .nav-d-logo a:hover{
-    transition: text-shadow .3s ease;
-    text-shadow: .5px 2px 4px;
+    color: #ee2c4c;
+    transition: color .3s ease;
 }
 .nav-d-links{
     display: flex;
@@ -35,14 +36,14 @@
 }
 .nav-d-links span a:hover{
     transition: all .3s ease;
-    color: #464CAC;
+    color: #5f68eb;
     padding-bottom: 5px;
-    border-bottom: 2px solid #464CAC;
+    border-bottom: 2px solid #5f68eb;
 }
 #link-active{
-    color: #464CAC;
+    color: #5f68eb;
     padding-bottom: 5px;
-    border-bottom: 2px solid #464CAC;
+    border-bottom: 2px solid #5f68eb;
 }
 #link-active:hover{
     color: #676765;
@@ -57,7 +58,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 100px 100px;
-    background-color: #b6d8ff;
+    background: conic-gradient(#5f68eb,#ee2c4c);
 }
 .f-f-left{
     width: fit-content;
@@ -75,17 +76,18 @@
 }
 .f-f-left a{
     text-decoration: none;
-    color: #fff;
+    color: #ffc107;
     padding: 10px 20px;
-    border: 2px solid #464CAC;
+    border: 2px solid #ffc107;
     border-radius: 3px;
-    background-color: #464CAC;
+    background-color: transparent;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 2px;
 }
 .f-f-left a:hover{
-    color: #464CAC;
-    background-color: transparent;
+    background-color: #FEC10E;
+    color: #fff;
     transition: all .3s ease;
 }
 /* Footer Right */
@@ -105,8 +107,12 @@
     font-size: 18px;
     font-weight: 300;
 }
+.foot-top span:hover{
+    transform: translateY(-2px);
+    transition: transform .3s ease;
+}
 .foot-top span a:hover{
-    color: #464CAC;
+    color: #fff;
     font-weight: 400;
     transition: color .3s ease;
 }
@@ -174,6 +180,8 @@
 @media (max-width:915px) {
     .header{
         padding: 30px 30px;
+        position: absolute;
+        top: 0;
     }
     .nav{
         display: flex;
@@ -181,25 +189,23 @@
         align-items: center;
         width: 100%;
     }
-    .left-side, .right-side{
+    .nav-desktop{
         display: none;
     }
     /* Hamburger Menu */
      .mainMenu {
         height: 100vh;
-        width: 60%;
+        width: 100%;
         position: absolute;
         top: 0;
         right: 0;
-        left: 1;
+        left: 0;
         z-index: 1;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: right .5s ease;
-        background: radial-gradient(circle,#FEC10E,#a37a00);
-        border-top-left-radius: 10rem;
-        border-bottom-left-radius: 10rem;
+        transition: top .5s ease;
+        background: conic-gradient(#ee2c4c,#5f68eb);
         display: none;
     }
     .mainMenu .closeMenu {
@@ -210,78 +216,28 @@
     }
     .openMenu {
         display: block;
-    }
-    .head-line{
-        width: 50%;
-        height: 2px;
-        background-color: #fff;
-    }
-    .hover-line{
-        width: 50%;
-        height: 2px;
-        background-color: #000;
-    }
-    #home-link-active{
-        color: #fff;
-        font-weight: 400 !important;
-        padding-bottom: 2px;
-    }
-    #home-link-active:hover{
-        color: #000;
-        transition: all .3s ease-in;
-        font-weight: 400 !important;
-    }
+    } 
     /* Footer */
-    .top-foot{
-        width: 90%;
-        padding: 50px 0 20px 0;
+    .footer{
+        flex-direction: column;
     }
-    .top-foot p{
-        font-size: 25px;
-        text-align: center;
+    .f-f-left{
+        margin-bottom: 100px;
     }
-    .top-foot h3{
+    .f-f-left h3{
         font-size: 20px;
-        font-weight: 500;
-        text-transform: capitalize;
-        margin: 0 auto 30px auto;
     }
-    .sub-foot{
-        width: 90%;
-        margin: 0 auto;
-        flex-direction: column;
-        align-items: center;
-        text-shadow: none;
+    .f-f-left p{
+        font-size: 14px;
     }
-    .sub-foot a{
+    .f-f-left a{
         font-size: 12px;
-        margin-bottom: 10px;
     }
-    .bottom-foot{
-        flex-direction: column;
-        width: 85%;
-    }
-    .foot-left, .foot-right{
-        justify-content: space-evenly;
+    /* Footer Right */
+    .f-f-right{
         width: 100%;
-        margin-bottom: 20px;
-    }
-    .foot-left a, .foot-right a{
-        color: #000;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 300;
-        
-    }
-    .foot-left li{
-        margin-right: 2vw;
     }
 }
-/* Mobile design for smaller screens */
-@media (max-width:320px) {
-    .foot-left a, .foot-right a{
-        font-size: 13px;
-    }
-}
+
 
 

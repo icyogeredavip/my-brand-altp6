@@ -2,135 +2,120 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 85%;
+    width: 80%;
     margin: 15vh auto;
 }
 .contact-main-content{
-    /* display: flex; */
-    background-color: rgb(0, 223, 93);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
-.contact-left{
+.contact-header{
     display: flex;
     flex-direction: column;
     width: 100%;
-}
-
-.cl-top-line{
-    width: 20%;
-    height: 2px;
-    border-radius: 50%;
-    background-color: #FEC10E;
-}
-.cl-bottom{
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 1px solid #000;
-    
+    margin-bottom: 100px;
 }
-.cl-bottom p{
-
+/* Contact Header */
+.contact-header h1{
+    font-size: 40px;
+    font-weight: 300;
+    color: #5f68eb;
+    margin-bottom: 10px;
 }
-.cl-bottom p span svg{
-    margin-right: .5vw;
-}
-.cl-bottom p, .cl-bottom p a{
-    text-decoration: none;
-    color: #fff;
+.contact-header p{
     font-size: 15px;
     font-weight: 200;
-    letter-spacing: 2px;
-    cursor: pointer;
+    color: #000;
+    text-align: center;
+}
+/* Contact Main Header Content */
+.contact-head{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.contact-right{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.contact-right h3{
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-weight: 400;
+/* Contact Section Cards */
+.contact-head p{
     font-size: 16px;
-    margin-bottom: 15px;
+    font-weight: 300;
+    color: #3e64ff;
+    padding: 20px 30px;
+    border-radius: 5px;
+    margin-bottom: 80px;
 }
-.contact-right form{
+.contact-head p a{
+    text-decoration: none;
+    color: #3e64ff;
+}
+.bg-1{background: #fef4f5;}
+.bg-2{background: #e9f0f8;}
+.bg-3{background: #f7eaf4;}
+
+/* Forms */
+.contact-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin-bottom: 100px;
+}
+.f1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.f1 input[type="text"], .f1 input[type="email"]{
+    width: 48%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #ee2c4c;
+    border-radius: 5px;
+}
+.f2{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.contact-right form input[type="text"], .contact-right form input[type="email"] {
+.f2 textarea{
+    width: 100%;
     padding: 10px 20px;
-    border-radius: 10px;
-    margin-bottom: 2.5vh;
-    background-color: #111129;
-    color: #fff;
-    border: none;
     outline: none;
-}
-.contact-right form input[type="button"]{
-    width: 30%;
-    text-transform: capitalize;
-    background-color: #FEC10E;
-    color: #fff;
-    border: 1px solid #FEC10E;
+    border: 1px solid #ee2c4c;
     border-radius: 5px;
-    padding: 8px;
+    margin-bottom: 30px;
+}
+
+
+.f2 input[type="button"]{
+    width: 20%;
+    text-transform: capitalize;
+    background-color: #5f68eb;
+    color: #fff;
+    border: 2px solid #5f68eb;
+    border-radius: 2px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-self: flex-end;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 300;
 }
-.contact-right form input[type="button"]:hover{
+.f2 input[type="button"]:hover{
     background-color: transparent;
-    color: #FEC10E;
+    color: #ee2c4c;
+    border: 2px solid #ee2c4c;
     transition: all .3s ease;
 }
 
 /* Mobile Designs */
-@media (max-width:915px) {
-    .contact-container{
-        flex-direction: column;
-        justify-content: center;
-        margin: 10vh auto;
-    }
-    .contact-left{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .cl-top{
-        margin-bottom: 0;
-    }
-    .cl-top h4{
-        font-size: 15px;
-        margin-bottom: 20px;
-    }
-    .cl-top h1{
-        font-size: 20px;
-        margin-bottom: 30px;
-    }
-    .cl-top-line{
-        width: 40%;
-        margin-bottom: 30px;
-    }
-    .cl-bottom p{
-        margin-bottom: 10px;
-    }
-    .cl-bottom p span svg{
-        margin-right: 10px;
-    }
-    .cl-bottom p, .cl-bottom p a{
-        font-size: 12px;
-    }
-    .contact-right{
-        width: 100%;
-    }
-    .contact-right form input[type="button"]{
-        width: 50%;
-    }
+@media (max-width:915px){
+    
 }

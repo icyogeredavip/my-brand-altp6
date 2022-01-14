@@ -40,14 +40,17 @@
     <main class="about-container">
         <div class="about-head">
             <h1>About Me</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus<br>luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         </div>
         <div class="abt-top-content">
             <div class="about-left">
                 <div class="abt-top">
                     <h4>about me</h4>
-                    <h1>i'm a software developer &<br>ux/ui designer</h1>
-                    <div class="abt-top-line"></div>
+                    <h1>i'm a <span class="special-about">software</span> developer &<br><span>ux/ui</span> designer</h1>
+                    <div class="line-container">
+                        <div class="abt-top-line"></div>
+                        <div class="abt-top-line"></div>
+                    </div>
                 </div>
                 <div class="abt-bottom">
                     <p>Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Eget nullam non nisi est sit amet facilisis magna etiam. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Eget nullam non nisi est sit amet facilisis magna etiam. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
@@ -55,9 +58,9 @@
                     <p>Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Eget nullam non nisi est sit amet facilisis magna etiam. Nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur.
                     </p>
                 </div>
-                <div class="abt-top-links">
-                    <a href="#">Hire Me</a>
-                    <a href="#">Download CV</a>
+                <div class="abt-bottom-links">
+                    <a class="abt-link1" href="#">Hire Me</a>
+                    <a class="abt-link2" href="#">Download CV</a>
                 </div>
             </div>
             <div class="about-right">
@@ -68,25 +71,25 @@
             <h3>follow me</h3>
             <div class="icons space-icons">
                     <span>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-figma"></i>
+                        <i class="fab fa-twitter n-fa-twitter"></i>
+                        <i class="fab fa-instagram n-fa-instagram"></i>
+                        <i class="fab fa-linkedin n-fa-linkedin"></i>
+                        <i class="fab fa-github n-fa-github"></i>
+                        <i class="fab fa-figma n-fa-figma"></i>
                     </span>
             </div>
         </div>
         <div class="abt-achievements-cards">
             <div class="abt-achv-content">
                 <p>services</p>
-                <h1>I offer according to my expertise.</h1>
+                <h1>I offer <span>services</span> according to my <span>expertise.</span></h1>
                 <a href="#">see all</a>
             </div>
             <div class="abt-achv-card-content">
                 <div class="abt-achv-c-left">
-                    <div class="abt-card">
+                    <div class="abt-card sp-card">
                         <img src="./" alt="icon">
-                        <h3>ui/ux design</h3>
+                        <h3>UI/UX design</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
                         
                     </div>
@@ -116,26 +119,27 @@
             
         </div>
         <div class="abt-skills-section">
-            <h2>my skills</h2>
-            <div class="abt-skills-top">
-                <div class="abt-skills-top-left">
-                    <h3>web design</h3>
-                    <p>Amet, consectetur adipiscing elit. Ut elit tellus,luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-                <div class="abt-skills-top-right">
-                    <h3>valid html code</h3>
-                    <p>Amet, consectetur adipiscing elit. Ut elit tellus,luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-            </div>
-            <div class="abt-skills-bottom">
-                <div class="abt-skills-bottom-left">
-                    <h3>valid js code</h3>
-                    <p>Amet, consectetur adipiscing elit. Ut elit tellus,luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
-                <div class="abt-skills-bottom-right">
-                    <h3>ux/ui design</h3>
-                    <p>Amet, consectetur adipiscing elit. Ut elit tellus,luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                </div>
+            <p>Expertise</p>
+            <h1>my expertise <span>skills</span></h1>
+            <div class="abt-skills">
+                    <div class="abt-skills-card">
+                        <img src="./" alt="Icon">
+                        <h6 class="card-hover"><span class="c-hover">ui/ux</span> design</h6>
+                        <div class="abt-skills-card-line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis iste, quam facere ducimus voluptate fugit?</p>
+                    </div>
+                    <div class="abt-skills-card card1">
+                        <img src="./" alt="Icon">
+                        <h6 class="card-hover1"><span class="c-hover1">web</span> development</h6>
+                        <div class="abt-skills-card-line line1"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis iste, quam facere ducimus voluptate fugit?</p>
+                    </div>
+                    <div class="abt-skills-card card2">
+                        <img src="./" alt="Icon">
+                        <h6 class="card-hover2"><span class="c-hover2">app</span> development</h6>
+                        <div class="abt-skills-card-line line2"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis iste, quam facere ducimus voluptate fugit?</p>
+                    </div>
             </div>
         </div>
     </main>

@@ -2,16 +2,37 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin: 15vh auto;
 }
+/* About Header Of the Content */
+.about-head{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+.about-head h1{
+    color: #5f68eb;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+.about-head p{
+    color: #000;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-align: center;
+}
+/* ABOUT CONTENT */
 .abt-top-content{
     display: flex;
     justify-content: space-between;
 }
 .abt-top-content, .abt-social-icons{
-    width: 95%;
+    width: 95%; 
     align-self: flex-end;
-    flex: 1;
 }
 .about-left{
     display: flex;
@@ -19,217 +40,269 @@
     width: 40%;
 }
 .abt-top{
-    margin-bottom: 7vh;
-}
-.abt-top h4, .abt-top h1{
-    text-align: left;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    width: fit-content;
 }
 .abt-top h4{
-    font-size: 16px;
-    letter-spacing: 4px;
-    font-weight: 400;
-    margin-bottom: 3vh;
+    color: #5f68eb;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;    
+    margin-bottom: 30px;
 }
 .abt-top h1{
-    font-size: 26px;
-    letter-spacing: 4px ;
-    font-weight: 500;
-    margin-bottom: 3vh;
+    color: #000;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 300;    
+    margin-bottom: 30px;
+}
+.abt-top h1 span{
+    color: #ee2c4c; 
+}
+.special-about{
+    color: #5f68eb !important; 
+}
+.line-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .abt-top-line{
     width: 20%;
     height: 2px;
     border-radius: 50%;
-    background-color: #FEC10E;
+    background: linear-gradient(135deg, #5f68eb,#ee2c4c,#FEC10E);
+    margin-bottom: 30px;
 }
 .abt-bottom p{
-    text-align: left;
+    text-align: justify;
     margin-bottom: 50px;
-    font-size: 16px;
+    font-size: 15px;
+    letter-spacing: 1px;
     font-weight: 200;
 }
+.abt-bottom-links a{
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.abt-link1{
+    color: #fff;
+    background: #ee2c4c;
+    border: 2px solid #ee2c4c;
+    border-radius: 2px;
+}
+.abt-link1:hover{
+    color: #ee2c4c;
+    background: transparent;
+    transition: color .3s ease, background .3s ease;
+}
+.abt-link2{
+    color: #ee2c4c;
+    background: transparent;
+    border: 2px solid #ee2c4c;
+    border-radius: 2px;
+}
+.abt-link2:hover{
+    color: #fff;
+    background: #ee2c4c;
+    transition: color .3s ease, background .3s ease;
+}
+/* ABOUT ME IMAGE */
 .about-right img{
     width: 650px;
     height: 650px;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
 }
+/* About ME Social Icons */
 .abt-social-icons{
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
 }
 .abt-social-icons h3{
-    margin-bottom: 1vh;
+    margin-bottom: 20px;
     text-transform: capitalize;
     letter-spacing: 4px;
-    font-weight: 500;    
+    font-weight: 400;
+    color: #5f68eb;    
 }
+.space-icons{
+    width: 20%;
+}
+.space-icons span{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Achievements Card */
 .abt-achievements-cards{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 150px;
     background-color: #fff;
 }
-.abt-achv-card-content{
-    display: flex;
-}
-.abt-card{
-    width: 70%;
-    border: 1px solid #000;
-    /* background-color: #0D0F23; */
-    border-radius: 10px;
-    padding: 20px 20px;
+.abt-achv-content{
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+}
+.abt-achv-content p{
+    color: #5f68eb;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.abt-achv-content h1{
+    color: #ee2c4c;
+    font-size: 35px;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.abt-achv-content h1 span{
+    color: #5f68eb;
+    font-size: 25px;
+    font-weight: 300;
+}
+.abt-achv-content a{
+    color: #5f68eb;
+    border: 2px solid #5f68eb;
+    border-radius: 2px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 10px 20px;
+    width: fit-content;
+    background: transparent;
+}
+.abt-achv-content a:hover{
+    color: #ee2c4c;
+    border: 2px solid #ee2c4c;
+    transition: border .3s ease, color .3s ease;
+}
+/* About Cards Section */
+.abt-achv-card-content{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sp-card{
+    background: #fef4f5;
+}
+.abt-card{
+    width: 90%;
+    border-radius: 10px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 .abt-card svg{
     margin-bottom: 40px;
 }
-.abt-card h3, .abt-card h1{
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: .5vh;
-}
+
 .abt-card h3{
-    font-size: 22px;
-    letter-spacing: 4px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #5f68eb;
 }
-.abt-card h1{
-    font-size: 60px;
-    letter-spacing: 5px;
+.abt-card p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #000;
 }
+/* About Skills Section */
 .abt-skills-section{
-    width: 80%;
-    margin: auto;    
+    width: 90%;
+    margin: 0 auto 100px auto;
 }
-.abt-skills-section h2{
-    text-align: center;
+.abt-skills-section p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #5f68eb;
     text-transform: uppercase;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 4px;
-    color: #FEC10E;
-    margin-bottom: 100px;    
+    letter-spacing: 2px;
+    margin-bottom: 50px;
 }
-.abt-skills-top, .abt-skills-bottom{
+.abt-skills-section h1{
+    font-size: 30px;
+    font-weight: 300;
+    color: #3e64ff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.abt-skills-section h1 span{
+    font-weight: 200;
+    color: #ee2c4c;
+}
+
+.abt-skills{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     margin-bottom: 50px;
 }
-.abt-skills-top-left, .abt-skills-top-right, .abt-skills-bottom-left, .abt-skills-bottom-right{
-    width: 40%;
+/* Expertise Skills Section */
+.abt-skills-card{
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px -7px #000;
 }
-.abt-skills-top-left h3, .abt-skills-top-right h3, .abt-skills-bottom-left h3, .abt-skills-bottom-right h3{
-    color: #FEC10E;
-    font-size: 23px;
+.abt-skills-card:hover{
+    background: #5f68eb;
+    transition: background .3s ease;
+}
+/* .abt-skills-card img{
+    
+} */
+.abt-skills-card h6 span{
+    color: #ee2c4c;
+    letter-spacing: 2px;
+}
+.abt-skills-card h6{
+    color: #3e64ff;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    margin-bottom: 1.5vh;
+    margin-bottom: 15px;
 }
-.abt-skills-top-left p, .abt-skills-top-right p, .abt-skills-bottom-left p, .abt-skills-bottom-right p{
-    color: #fff;
-    font-size: 14px;
+.abt-skills-card p{
+    color: #000;
+    font-size: 12px;
     font-weight: 200;
     text-transform: capitalize;
-    text-align: left;
-    letter-spacing: 4px;
+    margin-bottom: 20px;
 }
+/* Skill card line */
+.abt-skills-card-line{
+    width: 10%;
+    height: 1px;
+    margin: 0 auto 20px auto;
+    background: #3e64ff;
+}
+
+
 
 /* Mobile Designs */
 @media (max-width:915px) {
-    .about-container{
-        margin: 10vh auto;
-    }
-    .abt-top-content{
-        flex-direction: column-reverse;
-    }
-    .abt-top-content{
-        width: 90%;
-        align-self: flex-start;        
-    }
-    .about-left, .abt-social-icons{
-        width: 90%;
-        align-self: flex-end;
-    }
-    .abt-social-icons{
-        width: 80%;
-        margin: auto;
-    }
-    .abt-top{
-        margin-bottom: 7vh;
-    }
-    .abt-top h4{
-        margin-bottom: 3vh;
-    }
-    .abt-top h1{
-        font-size: 20px;
-        margin-bottom: 3vh;
-    }
-    .abt-top-line{
-        width: 40%;
-    }
-    .abt-bottom p{
-        text-align: justify;
-        margin-bottom: 30px;
-        font-size: 13px;
-    }
-    .about-right{
-        margin-bottom: 100px;
-    }
-    .about-right img{
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-    }
-    .abt-social-icons{
-        margin-bottom: 100px;
-        display: flex;
-        flex-direction: column;
-    }
-    .abt-social-icons h3{
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    .abt-achievements-cards{
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 80px;
-    }
-    .abt-card{
-        width: 80%;
-        margin-bottom: 50px;
-    }
-    .abt-skills-section h2{
-        font-size: 30px;
-        margin-bottom: 80px;   
-    }
-    .abt-skills-top, .abt-skills-bottom{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 90%;
-        margin: auto;
-    }
-    .abt-skills-top-left, .abt-skills-top-right, .abt-skills-bottom-left, .abt-skills-bottom-right{
-        width: 100%;
-        text-align: center;
-        margin-bottom: 50px;
-    }
-    .abt-skills-top-left h3, .abt-skills-top-right h3, .abt-skills-bottom-left h3, .abt-skills-bottom-right h3{
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
-    .abt-skills-top-left p, .abt-skills-top-right p, .abt-skills-bottom-left p, .abt-skills-bottom-right p{
-        font-size: 12px;
-        text-align: justify;
-    }
+   
 }

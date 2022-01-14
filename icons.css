@@ -7,14 +7,21 @@
     cursor: pointer;
 }
 .fa-twitter:hover, .fa-instagram:hover, .fa-linkedin:hover, .fa-github:hover, .fa-figma:hover{
-    transform: translateY(-5px);
-    transition: all .3s ease;
+    transform: translateY(-6px);
+    transition: all .4s ease;
 }
 .fa-twitter:hover{color: #1da1f2;}
-.fa-instagram:hover{color: #f10c3e;} 
+.fa-instagram:hover{color: #ee2c4c;} 
 .fa-linkedin:hover{color: #1889cf;}
-.fa-github:hover{color: #0e76a8;}
-.fa-figma:hover{color: #f10c3e;}
+.fa-github:hover{color: #1da1f2;}
+.fa-figma:hover{color: #ee2c4c;}
+/* About Me PAGE ICONS */
+
+.n-fa-twitter{color: #1da1f2;}
+.n-fa-instagram{color: #ee2c4c;} 
+.n-fa-linkedin{color: #1889cf;}
+.n-fa-github{color: #1da1f2;}
+.n-fa-figma{color: #ee2c4c;}
 
 @media (max-width:915px) {
     .space-icons{
